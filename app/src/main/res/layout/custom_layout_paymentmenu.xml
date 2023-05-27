@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="3dp"
+    android:padding="20dp"
+    android:layout_margin="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:weightSum="6"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_custompayment_HinhMon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp"
+            android:src="@drawable/cafe_americano"
+            tools:ignore="MissingClass" />
+
+        <TextView
+            android:id="@+id/txt_custompayment_TenMon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cafe americano with ice"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:paddingLeft="7dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/txt_custompayment_SoLuong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:text="15"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/txt_custompayment_GiaTien"
+            android:layout_toLeftOf="@id/txt_custompayment_GiaTien"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/txt_custompayment_GiaTien"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="10000đ"
+            android:textColor="@color/black"
+            android:fontFamily="@font/muli_black"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
